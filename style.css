@@ -6,3 +6,37 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+header {
+    width: 100%;
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    display: flex;
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header li {
+    list-style-type: none;
+    color: #fff;
+}
+
+.header li:active {
+    color: red;
+}
+
+.disabled {
+    display: none;
+}
+
+ul img {
+    width: 150px;
+    height: 50px;
+}
