@@ -1,8 +1,8 @@
-const btn = document.querySelector('.header-menu')
-const headerMenu = document.querySelector('.header')
+const burger = document.querySelector('.burger-menu')
+const headerMenu = document.querySelector('.header-menu')
 
-const handleClick = () => {
-    headerMenu.classList.toggle('disabled')
+const handleBurger = () => {
+    headerMenu.classList.toggle('active-menu')
 }
 
-btn.addEventListener('click', handleClick)
+burger.addEventListener('click', handleBurger)
