@@ -9,11 +9,12 @@
 
 header {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     background: #000;
     display: flex;
+    height: fit-content;
 }
 
 header ul {
@@ -26,6 +27,15 @@ header ul {
 header ul a {
     color: #fff;
     text-decoration: none;
+    transition: all .5s;
+}
+
+header ul a:hover {
+    color: orange;
+}
+
+.header {
+    position: relative;
 }
 
 .header-menu {
@@ -35,6 +45,7 @@ header ul a {
 }
 
 .header li {
+    position: relative;
     list-style-type: none;
     color: #fff;
 }
@@ -69,11 +80,44 @@ ul img {
     width: 30px;
 }
 
+.header-tel i {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    margin-top: 25px;
+}
+
 .burger-menu {
     display: none;
 }
 
-@media (max-width: 700px) {
+.header-menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.header-menu li:hover ul {
+    display: block;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    top: 100%;
+    left: -40px;
+    padding-top: 45px;
+    width: 180px;
+    text-align: center;
+    gap: 30px;
+}
+
+.header-menu li ul li {
+    text-decoration: none;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
     header {
         justify-content: space-between;
         align-items: center;
@@ -111,7 +155,7 @@ ul img {
         text-align: center;
         gap: 30px;
         padding-bottom: 20px;
-        width: 100%;
+        width: 100vw;
         display: flex;
         position: absolute;
         flex-direction: column;
