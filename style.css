@@ -69,7 +69,7 @@ ul img {
 }
 
 .header-tel {
-    width: 10%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,11 +80,8 @@ ul img {
     width: 30px;
 }
 
-.header-tel i {
-    height: 40px;
-    width: 40px;
-    color: #fff;
-    margin-top: 25px;
+.header-tel a {
+    font-size: 16px;
 }
 
 .burger-menu {
@@ -115,6 +112,18 @@ ul img {
     text-decoration: none;
     padding-bottom: 20px;
     cursor: pointer;
+}
+
+.call-back {
+    color: #fff;
+    width: 100%;
+    font-size: 12px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
 }
 
 @media (max-width: 770px) {
