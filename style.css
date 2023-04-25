@@ -12,8 +12,7 @@ header {
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    background: #5c5d5c;
-    display: flex;
+    background: #fff;
     height: fit-content;
     position: fixed;
     left: 0;
@@ -28,13 +27,13 @@ header ul {
 }
 
 header ul a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: all .5s;
 }
 
 header ul a:hover {
-    color: rgb(137, 168, 226);
+    color: rgb(167, 192, 240);
 }
 
 .header {
@@ -53,7 +52,7 @@ header ul a:hover {
 }
 
 .header-menu li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -69,6 +68,7 @@ ul img {
 .header-tel {
     width: 20%;
     display: flex;
+    justify-content: end;
     align-items: center;
 }
 
@@ -97,36 +97,35 @@ ul img {
 .header-menu li:hover ul {
     display: block;
     position: absolute;
-    background: #5c5d5c;
-    color: #fff;
+    background: #fff;
     top: 100%;
     padding: 40px 10px 20px;
-    width: 200px;
+    min-width: 250px;
     text-align: center;
     gap: 30px;
+    left: -10px;
     border-radius: 10px;
+    text-align: left;
 }
 
 .header-menu li ul li {
+    background-color: #fff;
     text-decoration: none;
     padding-bottom: 20px;
     cursor: pointer;
 }
 
-.header-menu li ul li:last-child {
-    padding-bottom: 0;
-}
 
-
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     .header {
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        text-transform: uppercase;
     }
 
     ul img {
-        height: 20px;
-        width: 60px;
+        height: 30px;
+        width: 80px;
     }
 
     .header-tel {
@@ -137,38 +136,44 @@ ul img {
     .header-menu {
         display: none;
     }
-
+    
     .burger-menu {
         display: block;
         height: 30px;
         width: 50px;
         cursor: pointer;
-        color: #fff;
+        color: #000;
         padding-top: 7px;
-        margin-right: 30px;
+        margin-left: 40px;
     }
 
     .active-menu {
-        height: fit-content;
-        text-align: center;
-        gap: 30px;
+        height: 100vh;
+        text-align: left;
+        gap: 20px;
         padding: 20px 0;
-        width: 100vw;
-        display: flex;
+        min-width: 100vw;
+        display: block;
         position: absolute;
         flex-direction: column;
         top: 40px;
-        background: #5c5d5c;
+        background: #fff;
     }
 
     .header-tel img {
-        color: #fff;
-        height: 20px;
-        width: 20px;
-        margin-right: 0;
+        display: none;
     }
 
     .header-tel a {
-        display: none;
+        font-size: 14px;
+    }
+
+    .header-menu li ul {
+        display: block;
+        position: inherit;
+        font-size: 12px;
+        text-align: left;
+        padding-top: 20px;
     }
 }
+
