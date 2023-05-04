@@ -85,6 +85,12 @@ ul img {
     margin-right: 20px;
 }
 
+.header-tel a img {
+    margin-top: 10px;
+    width: 180px;
+    height: 40px;
+}
+
 .header-tel__items {
     display: flex;
     flex-wrap: wrap;
