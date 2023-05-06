@@ -82,22 +82,29 @@ ul img {
     align-items: center;
 }
 
-.header-tel img{
-    height: 30px;
-    width: 30px;
-    margin-right: 20px;
+.header-tel a {
+    outline: none;
+    text-decoration: none;
 }
 
 .callback-btn {
-    padding: 10px 20px;
+    min-width: 130px;
+    padding: 5px 5px;
     outline: none;
     background-color: #376400;
     color: #fff;
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    margin-right: 15px;
+    margin-right: 10px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.callback-btn:active,
+.callback-btn:focus {
+    outline: none;
 }
 
 .header-tel__items {
@@ -149,7 +156,7 @@ ul img {
 
 /* Media queries */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     main {
        z-index: 0;
 }
@@ -171,47 +178,23 @@ ul img {
     }
 
     .header-menu {
-        display: none;
-    }
-
-    .burger-menu {
-        display: block;
-        height: 30px;
-        width: 50px;
-        cursor: pointer;
-        color: #000;
-        padding-top: 7px;
-        margin-left: 40px;
-    }
-
-    .active-menu {
-        height: 100vh;
-        text-align: left;
-        gap: 30px;
-        padding: 20px 0;
-        min-width: 100vw;
-        display: block;
-        position: absolute;
-        flex-direction: column;
-        top: 40px;
-        background: #fff;
-        z-index: 3;
-    }
-
-    .header-tel img {
-        display: none;
+        font-size: 12px;
     }
 
     .header-tel a {
         font-size: 14px;
     }
 
-    .header-menu li ul {
-        display: block;
-        position: inherit;
-        font-size: 12px;
-        text-align: left;
-        padding-top: 20px;
+    .callback-btn {
+        padding: 7px 13px;
+        margin-right: 5px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    ul img {
+        min-width: 120px;
+        height: 40px;
     }
 }
 
